@@ -10,8 +10,7 @@ public class TicTacToe {
     //given - constants for board size and markers
     public static final int MAX_BOARD_POSITIONS = 9;
     public static final char X_MARKER = 'X';
-    public static final char M_MARKER = 'M'; //changed this from 0 to M bc it was really throwing me off when I ran the
-    //code and the numbers are already showing / couldn't easily see where the CPU placed their mark
+    public static final char M_MARKER = 'M'; //changed this from 0 to M because I couldn't easily see where the CPU placed their mark
 
     //lists I made to track the positions occupied by the user and CPU
     static ArrayList<Integer> playerPositions = new ArrayList<>(); //added both lists to make it easier to cycle through the loops
@@ -143,14 +142,14 @@ public class TicTacToe {
     public static String checkWinner() {
 
         //given - winning positions for reference
-        int[] winningPosition0 = {0, 1, 2};    // top horizontal
-        int[] winningPosition1 = {3, 4, 5};    // middle horizontal
-        int[] winningPosition2 = {6, 7, 8};    // bottom horizontal
-        int[] winningPosition3 = {0, 3, 6};    // left vertical
-        int[] winningPosition4 = {1, 4, 7};    // middle vertical
-        int[] winningPosition5 = {2, 5, 8};    // right vertical
-        int[] winningPosition6 = {0, 4, 8};    // top-left, bottom-right diagonal
-        int[] winningPosition7 = {2, 4, 6};    // top-right, bottom-left diagonal
+        int[] winningPosition0 = {0, 1, 2};    //top horizontal
+        int[] winningPosition1 = {3, 4, 5};    //middle horizontal
+        int[] winningPosition2 = {6, 7, 8};    //bottom horizontal
+        int[] winningPosition3 = {0, 3, 6};    //left vertical
+        int[] winningPosition4 = {1, 4, 7};    //middle vertical
+        int[] winningPosition5 = {2, 5, 8};    //right vertical
+        int[] winningPosition6 = {0, 4, 8};    //top-left, bottom-right diagonal
+        int[] winningPosition7 = {2, 4, 6};    //top-right, bottom-left diagonal
 
         //initialize the 2D array (or array of arrays) that cover all possible winning conditions
         //int[][] indicates that the variable winningConditions stores an array where each element is an array of ints.
