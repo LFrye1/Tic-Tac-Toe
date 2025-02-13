@@ -10,7 +10,7 @@ public class TicTacToe {
     //given - constants for board size and markers
     public static final int MAX_BOARD_POSITIONS = 9;
     public static final char X_MARKER = 'X';
-    public static final char M_MARKER = 'M'; //changed this from 0 to M because I couldn't easily see where the CPU placed their mark
+    public static final char M_MARKER = 'M'; //changed this from 0 to M to make it easier to see where the CPU placed their mark
 
     //lists I made to track the positions occupied by the user and CPU
     static ArrayList<Integer> playerPositions = new ArrayList<>(); //added both lists to make it easier to cycle through the loops
@@ -62,15 +62,6 @@ public class TicTacToe {
         System.out.println("You chose " + playerMarker + ".");
         System.out.println("The CPU will play as " + cpuMarker + ". Good luck!");
         //statements to confirm the user's choice.
-
-        // 1. Keep playing while there are still options for the user or opponent
-        // to select, i.e. not all the elements in the board are X_MARKER or O_MARKER.
-
-        // 2. Display the board
-
-        // 3. Ask the user to select an available position on the board.
-        // A valid position is one that's not already selected,
-        // i.e. not X_MARKER or O_MARKER
 
 
         while (true) {
